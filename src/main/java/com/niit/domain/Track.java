@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 
 @Document
 public class Track {
-
+@Id
     int trackId;
     String trackName;
     int trackRating;
