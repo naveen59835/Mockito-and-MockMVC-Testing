@@ -53,7 +53,10 @@ public class TrackServiceImpl implements TrackService{
     }
 
     @Override
-    public List<Track> getTrackList() throws TrackNotFound {
+    public List<Track> getTrackList() throws TrackNotFound, TrackAlreadyFound {
+        if(trackRepo.findAll().isEmpty()){
+            throw  new TrackAlreadyFound("The track not found");
+        }
         return trackRepo.findAll();
     }
 

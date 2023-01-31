@@ -9,7 +9,7 @@ import java.util.List;
 public interface TrackService {
     Track saveTrack(Track track) throws TrackAlreadyFound;
     boolean deleteTrack(int trackId) throws TrackNotFound;
-    List<Track> getTrackList() throws TrackNotFound;
+    List<Track> getTrackList() throws TrackNotFound, TrackAlreadyFound;
     List<Track> findByJustin(String artistName) throws TrackNotFound;
 
     List <Track> findByRating();

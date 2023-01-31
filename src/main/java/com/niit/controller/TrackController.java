@@ -92,7 +92,9 @@ public class TrackController {
         try{
             responseEntity=new ResponseEntity<>(trackService.findByRating(),HttpStatus.OK);
 
-        }catch (Exception e){
+        }
+
+        catch (Exception e){
             responseEntity=new ResponseEntity(e.getMessage(),HttpStatus.INTERNAL_SERVER_ERROR);
         }
         return responseEntity;
