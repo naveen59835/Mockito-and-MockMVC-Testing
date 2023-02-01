@@ -51,7 +51,7 @@ public class TrackController {
 
 
     @DeleteMapping("/track/{trackId}")
-    public ResponseEntity<?> deleteTrack(@PathVariable ("trackId") int trackId) throws TrackNotFound{
+    public ResponseEntity<?> deleteTrack(@PathVariable int trackId) throws TrackNotFound{
         try {
             trackService.deleteTrack(trackId);
             responseEntity=new ResponseEntity<String>("Successfully Deleted",HttpStatus.OK);
