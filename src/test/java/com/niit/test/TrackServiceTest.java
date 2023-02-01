@@ -22,7 +22,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.Optional;
 
@@ -32,7 +31,7 @@ import static org.mockito.Mockito.*;
 import static org.mockito.internal.verification.VerificationModeFactory.times;
 
 @ExtendWith(MockitoExtension.class)
-public class CustomerServiceTest {
+public class TrackServiceTest {
     @Mock
     TrackRepo trackRepo;
     @InjectMocks

@@ -27,7 +27,7 @@ import static org.junit.jupiter.api.Assertions.assertNotEquals;
 @ExtendWith(SpringExtension.class)
 @DataMongoTest
 
-public class CustomerRepositoryTest {
+public class TrackRepositoryTest {
 
     @Autowired
     private TrackRepo trackRepo;
